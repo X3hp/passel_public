@@ -48,7 +48,7 @@ pins_channel = 777134945272987659
 # TODO
 # add any black listed channel IDs as a list separated by a comma (,)
 # a good idea is to add admin channels to this
-blacklisted_channels = [988809461885968415]
+blacklisted_channels = []
 
 # discord embed colors
 EMBED_COLORS = [
@@ -209,7 +209,7 @@ async def on_guild_channel_pins_update(channel, last_pin):
 
 
 # TODO Replace TOKEN with the token from discord developer portal 
-#client.run('token')
+#client.run('TOKEN')
 
 # TODO If using GitHub diff deployment on HeroKu comment out the above line with '#' and remove '#' from the line below to uncomment it. 
 client.run(os.environ.get('TOKEN'))
